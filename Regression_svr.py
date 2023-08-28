@@ -11,8 +11,8 @@ sc=StandardScaler()
 x=sc.fit_transform(x)
 sc1=StandardScaler()
 y=y.reshape(len(y),1)
-
 y=sc1.fit_transform(y)
+
 from sklearn.svm import SVR
 svr=SVR(kernel='rbf')
 svr.fit(x,y)
